@@ -23,6 +23,22 @@ Mostly related to the environment in which the code is running. Error is irrecov
 **throws**: The throws keyword is used to declare exceptions that can occur during the execution of a program. For any method that can throw exceptions, it is mandatory to use the throws keyword to list the exceptions that can be thrown, if it is not handling it in try catch block.
 
 
+### try-catch-finally structure
+```Java
+try {
+
+} 
+catch (IndexOutOfBoundsException e) {
+                                 
+} 
+catch (IOException e) {
+                                   
+} 
+finally {
+        
+}
+```
+
 ### Custom Exception example in Java
 
 ```Java
