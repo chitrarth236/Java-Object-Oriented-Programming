@@ -1,5 +1,5 @@
 ## Exceptions in Java
-There are three types of exceptions in Java:
+### There are three types of exceptions in Java:
 
 1) **Checked Exception**
 The classes which directly inherit Throwable class except RuntimeException and Error are known as checked exceptions e.g. IOException, SQLException etc. Checked exceptions are checked at compile-time. You must need to handle it before compiling your code.
@@ -10,7 +10,7 @@ The classes which inherit RuntimeException are known as unchecked exceptions e.g
 3) **Error**
 Mostly related to the environment in which the code is running. Error is irrecoverable e.g. OutOfMemoryError, VirtualMachineError, AssertionError etc.
 
-5 keywords of Java Exception handling
+### 5 keywords of Java Exception handling
 
 **try**: The first step in constructing an exception handler is to enclose the code that might throw an exception within a try block.If an exception occurs within the try block, that exception is handled by an exception handler associated with it. To associate an exception handler with a try block, you must put a catch block after it.
 
