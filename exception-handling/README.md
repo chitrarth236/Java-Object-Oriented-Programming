@@ -21,3 +21,46 @@ Mostly related to the environment in which the code is running. Error is irrecov
 **throw**: The "throw" keyword is used to throw an exception.
 
 **throws**: The throws keyword is used to declare exceptions that can occur during the execution of a program. For any method that can throw exceptions, it is mandatory to use the throws keyword to list the exceptions that can be thrown, if it is not handling it in try catch block.
+
+
+### Custom Exception example in Java
+
+```Java
+// class representing custom exception  
+class InvalidAgeException extends Exception  
+{  
+    public InvalidAgeException (String str)  
+    {   
+        super(str);  
+    }  
+}  
+    
+// class that uses custom exception InvalidAgeException  
+public class TestCustomException1  
+{  
+    static void validate (int age) throws InvalidAgeException{    
+       if(age < 18){   
+        throw new InvalidAgeException("age is not valid to vote");    
+       }  
+       else {   
+        System.out.println("welcome to vote");   
+        }   
+     }    
+  
+    // main method  
+    public static void main(String args[])  
+    {  
+        try  
+        {   
+            validate(13);  
+        }  
+        catch (InvalidAgeException ex)  
+        {  
+            System.out.println("Caught the exception");  
+            System.out.println("Exception occured: " + ex);  
+        }  
+  
+        System.out.println("rest of the code...");    
+    }  
+}  
+```
