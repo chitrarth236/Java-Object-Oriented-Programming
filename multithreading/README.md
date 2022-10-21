@@ -58,6 +58,14 @@ Causes the currently running thread to yield to any other threads of the same pr
 #### join()
 java.lang.Thread class provides the join() method which allows one thread to wait until another thread completes its execution. If t is a Thread object whose thread is currently executing, then t.join() will make sure that t is terminated before the next instruction is executed by the program. An overloaded method of join takes miliseconds to specify waiting time. Like sleep, join also throws an InterruptedException. 
 
+#### sleep()
+Thread.sleep causes the current thread to suspend execution for a specified period. This is an efficient means of making processor time available to the other threads of an application or other applications that might be running on a computer system.
+
+#### interrupt()
+The interrupt() method of thread class is used to interrupt the thread. If any thread is in sleeping or waiting state (i.e. sleep() or wait() is invoked) then using the interrupt() method, we can interrupt the thread execution by throwing InterruptedException.
+
+If the thread is not in the sleeping or waiting state then calling the interrupt() method performs a normal behavior and doesn't interrupt the thread but sets the interrupt flag to true.
+
 ### Synchronized keyword
 
 1. Synchronized is the keyword applicable to methods and blocks(not to classes/variables) and used to resolve concurrency issue.
