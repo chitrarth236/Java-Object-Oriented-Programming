@@ -53,6 +53,7 @@ However, thread priorities cannot guarantee the order in which threads execute a
 ### Important methods related to threads
 
 #### yield()
+Causes the currently running thread to yield to any other threads of the same priority that are waiting to be scheduled. If there is no waiting thread or all waiting threads have low priority then same thread can continue its execution.
 
 #### join()
 
