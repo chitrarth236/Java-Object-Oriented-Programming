@@ -21,6 +21,7 @@ Collections is a class which has some utility methods for collection objects.
     
     Collections.sort(list, (a, b) -> b - a); // desc
 - **non premitive to premitive list** : toArray();
+    
 
 #### Queue
 - **Define** : Queue<T> queue = new ArrayDeque<>();
