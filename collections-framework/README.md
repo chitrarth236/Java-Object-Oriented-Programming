@@ -52,6 +52,13 @@ Collections is a class which has some utility methods for collection objects.
 - **emptyness check** : boolean isEmpty(); 
 
 #### Set
+- **Define** : Set set = new HashSet<>();
+- **insert** : boolean add(Object O);
+- **delete** : boolean remove(Object O);
+- **clear all** : void clear();
+- **size** : int size();
+- **emptyness check** : boolean isEmpty(); 
+- **value contain check** : boolean contains(t);
 
 #### String
 
