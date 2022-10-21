@@ -41,7 +41,15 @@ Collections is a class which has some utility methods for collection objects.
 - **peak at head element** : T peek();
 - **emptyness check** : boolean isEmpty(); 
 
-#### Map
+#### HashMap
+- **Define** : HashMap<K, V> hashMap = new HashMap<>();
+- **insert** : V put(k, v);
+- **get** : V get(k);
+- **remove** : V remove(k);
+- **size** : int size(); 
+- **contains** : boolean containsKey(k); 
+- **clear all** : void clear();
+- **emptyness check** : boolean isEmpty(); 
 
 #### Set
 
