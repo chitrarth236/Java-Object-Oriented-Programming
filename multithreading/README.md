@@ -56,6 +56,7 @@ However, thread priorities cannot guarantee the order in which threads execute a
 Causes the currently running thread to yield to any other threads of the same priority that are waiting to be scheduled. If there is no waiting thread or all waiting threads have low priority then same thread can continue its execution.
 
 #### join()
+java.lang.Thread class provides the join() method which allows one thread to wait until another thread completes its execution. If t is a Thread object whose thread is currently executing, then t.join() will make sure that t is terminated before the next instruction is executed by the program. An overloaded method of join takes miliseconds to specify waiting time. Like sleep, join also throws an InterruptedException. 
 
 ### Synchronized keyword
 
