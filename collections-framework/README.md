@@ -33,6 +33,13 @@ Collections is a class which has some utility methods for collection objects.
 - **emptyness check** : boolean isEmpty(); 
 
 #### Stack
+- **Define** : Stack<T> stack = new Stack<>();
+- **Define** : Deque<> stack = new ArrayDeque<>(); // better approach
+- **insert** : boolean push();
+- **remove** : T pop();
+- **size** : int size(); 
+- **peak at head element** : T peek();
+- **emptyness check** : boolean isEmpty(); 
 
 #### Map
 
