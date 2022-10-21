@@ -1,3 +1,39 @@
+### Defining a Thread
+
+A thread is a lightweight sub-process, the smallest unit of processing. Multiprocessing and multithreading, both are used to achieve multitasking. Multithreading is a process of executing multiple threads simultaneously.
+
+There are two ways to create a thread:
+
+1. By extending Thread class
+2. By implementing Runnable interface.
+
+Using Runnable interface
+
+```Java
+class MyThreadJob implements Runnable{
+
+    @Override
+    public void run() {
+        //core thread job's logic
+    }
+}
+
+public class MultiThreading {
+    public static void main(String[] args){
+        //define thread's job
+        MyThreadJob threadJob = new MyThreadJob();
+        
+        //create thread by passing the thread's job
+        Thread t1 = new Thread(threadJob);
+        
+        //to start the thread
+        t1.start();
+
+        System.out.println("main thread");
+    }
+}
+```
+
 ### Synchronized keyword
 
 1. Synchronized is the keyword applicable to methods and blocks(not to classes/variables) and used to resolve concurrency issue.
