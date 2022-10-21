@@ -33,6 +33,28 @@ public class MultiThreading {
     }
 }
 ```
+### Thread Priorities
+
+Thread priority constants are as follows:
+1. public static final int MIN_PRIORITY = 1;
+2. public static final int NORM_PRIORITY = 5;
+3. public static final int MAX_PRIORITY = 10;
+
+Thread priority methods:
+1. public final int getPriority();
+2. public final void setPriority(int priority);
+
+Any int number between min and max priority can also be used to set priority. Thread with high priority will get the chance to run first. If two threads have same priority we cannot expect execution order. 
+
+Default priority for main thread is 5. For all the other threads default priority is inherited from parent to child thread.
+
+However, thread priorities cannot guarantee the order in which threads execute and are very much platform dependent.
+
+### Important methods related to threads
+
+#### yield()
+
+#### join()
 
 ### Synchronized keyword
 
