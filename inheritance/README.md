@@ -30,6 +30,8 @@ class Sub extends Super {
 - If a static method defined in a superclass is redefined in a subclass, the method defined in the superclass is hidden; the hidden static method can be invoked by using the syntax “SuperClassName.staticMethodName( );”
 - A method declared final cannot be overridden.
 - Overridding of non-abstract method to an abstract method is possible.
+- Must not throw new or broader checked exceptions.
+- May throw fewer or narrower checked exceptions, or any unchecked exception.
 
 
 ### super() method/keyword
