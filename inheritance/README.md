@@ -21,10 +21,14 @@ class Sub extends Super {
 ### Method Overriding
 
 #### Rules for Overridding Inherited Methods
+- The argument list should be exactly the same as that of the overridden method.
+- The return type should be the same or a subtype of the return type declared in the original overridden method in the superclass.
+- The access level cannot be more restrictive than the overridden method's access level. 
 - Private data fields in a superclass are not accessible outside of that class, hence they cannot be used directly by a subclass; they can be accessed &/or mutated by public accessor &/or mutators defined in the superclass.
 - An instance method can be overridden only if it is accessible; private methods cannot be overridden if a method defined in a subclass is private in its superclass, the two methods are completely unrelated
 - A static method can be inherited, but a static method cannot be overridden remember that static methods are class methods.
 - If a static method defined in a superclass is redefined in a subclass, the method defined in the superclass is hidden; the hidden static method can be invoked by using the syntax “SuperClassName.staticMethodName( );”
+- A method declared final cannot be overridden.
 
 
 ### super() method/keyword
