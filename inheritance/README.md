@@ -29,6 +29,7 @@ class Sub extends Super {
 - A static method can be inherited, but a static method cannot be overridden remember that static methods are class methods.
 - If a static method defined in a superclass is redefined in a subclass, the method defined in the superclass is hidden; the hidden static method can be invoked by using the syntax “SuperClassName.staticMethodName( );”
 - A method declared final cannot be overridden.
+- Overridding of non-abstract method to an abstract method is possible.
 
 
 ### super() method/keyword
