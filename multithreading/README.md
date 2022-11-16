@@ -85,3 +85,16 @@ If the thread is not in the sleeping or waiting state then calling the interrupt
 9. If a thread want to access synchronized static method, a thread will need to use class level lock. Every class in Java has a unique lock.
 
 10. if one thread is exceuting static synchronized method, the other threads are not allowed to access any other static synchronized method of that class via any object simultaneously. but they can execute any synchronized or non-synchronized method simultaneously.
+
+### Inter-thread communication
+- Below three methods are present in Object class(not in Thread class, because a thread can call these method on any java object).
+- All three methods can only be called from synchronized area and the thread should acquire the lock of that object first.
+
+### wait
+- If a thread calls wait() on any object it immediately releases the lock of that object and enters into waiting state.
+- If waiting thread gets notification it will go to another waiting state to get a lock of that object first then after getting lock it will enter ready/runnable state.
+
+### notify
+- If thread calls notify() on any object, it releases the lock of that object but not immediately.
+
+### notifyAll
