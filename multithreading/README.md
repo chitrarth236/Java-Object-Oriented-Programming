@@ -96,5 +96,10 @@ If the thread is not in the sleeping or waiting state then calling the interrupt
 
 ### notify
 - If thread calls notify() on any object, it releases the lock of that object but not immediately.
+- It will give a notification to one of the waiting threads, but, we can't expect which one will be notified in case of multiple waiting threads, it depends in JVM.
+- 
 
 ### notifyAll
+- NotifyAll() is used to give a notification to all waiting threads of a particular object. Although multiple threads are notified at once, execution will be performed one by one because threads required a lock on that object.
+
+
